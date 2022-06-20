@@ -1,0 +1,164 @@
+body, html {
+    height: 100%;
+  
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header.group1 {
+    display: flex;
+    flex-direction: row;
+    height: 5%;
+    background: yellow;
+    padding: 0.1%;
+}
+
+.topo {
+    flex: 1 auto;
+    position: relative;
+    background: aqua;
+    margin: 0.1%;
+}
+
+#dinheiro{
+    position: absolute;
+    font-size: 1.55vw;
+    right: 0;
+    margin: 0;
+    top: 10%;
+    
+}
+
+input.voltar{
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.group2 {
+    display: flex;
+    flex: 1;
+    margin: 0.1%;
+}
+
+
+
+.group2a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    flex: 1;
+}
+
+
+
+article.display {
+    position: relative;
+    flex: 1;
+    background-image: url("natureza.jpg");
+    background-size:contain;
+    background-size: 100%;
+    margin: 0.1%;
+}
+
+.display img{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+}
+
+footer.Plano_Fundo {
+    position: relative;
+    flex-direction: row;
+    height: 33%;
+    background: green;
+    margin: 0.1%;
+}
+
+input.im1{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    left: 5%;
+}
+input.im2{
+    position: relative;
+    height: 100%;
+    width: 30%;
+}
+input.im3{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    right: 5%;
+}
+
+aside.Loja {
+    width: 30%;
+    background: olive;
+    margin: 0.1%;
+    
+}
+
+
+
+.popup{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 40px 40px;
+    text-align: center;
+    background-color: red;
+    border: solid black;
+}
+
+.open_popup{
+    visibility: visible;
+}
+
+.confirm{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 40px 40px;
+    text-align: center;
+    background-color: red;
+    border: solid black;
+}
+
+.open_confirm{
+    visibility: visible;
+}
+
+.erro{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 40px 40px;
+    text-align: center;
+    background-color: red;
+    border: solid black;
+}
+
+.open_erro{
+    visibility: visible;
+}
