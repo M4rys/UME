@@ -1,0 +1,181 @@
+body, html {
+    height: 97%;
+    background-image: url("/Imagens/background.png");
+  
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header.group1 {
+    display: flex;
+    flex-direction: row;
+    height: 5%;
+    padding: 0.1%;
+}
+
+.topo {
+    flex: 1 auto;
+    position: relative;
+    margin: 0.1%;
+}
+
+
+.voltar{
+    border: solid purple;
+    background-color: orange;
+    border-radius: 100px;
+}
+
+#dinheiro{
+    position: absolute;
+    font-size: 1.55vw;
+    right: 0;
+    margin: 0;
+    top: 10%;
+    
+}
+
+input.voltar{
+    position: absolute;
+    left: 0;
+    width: 5%;
+    height: 100%;
+}
+
+.group2 {
+    display: flex;
+    flex: 1;
+    margin: 0.1%;
+}
+
+
+
+.group2a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    flex: 1;
+}
+
+
+
+article.display {
+    position: relative;
+    flex: 1;
+    background-image: url("natureza.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0.1%;
+    border: solid purple;
+    border-radius: 5%;
+}
+
+#div_press {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000af;
+    visibility: hidden;
+}
+
+.display img{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+}
+
+.Plano_Fundo {
+    position: relative;
+    flex-direction: column;
+    height: 33%;
+    margin: 0.1%;
+    border: black;
+    border-radius: 5%;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.abrirPlano{
+    visibility: visible;
+}
+
+
+
+aside.Loja {
+    width: 35%;
+    background: #fc62ffaf;
+    height: 100%;
+    margin: 0.1%;
+    border: solid lightblue;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+.comprar{
+    position: absolute;
+    right: 0;
+    height: 95%;
+    visibility: hidden;
+}
+
+.abrirComprar{
+    visibility: visible;
+}
+
+
+.informações{
+    display: flex;
+    flex-direction: column;
+    background-color: #fc62ffaf;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: solid black;
+    border-radius: 3%;
+    margin: 1%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.im{
+    position: relative;
+    flex: 1;
+    flex-direction: row;
+    border: solid white;
+    border-radius: 0.5%;
+    margin-left: 0.05%;
+}
+
+.erro{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/Imagens/butonnnn.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 40px 40px;
+    text-align: center;
+    background-color: cyan;
+    border: solid black;
+    border-radius: 30%;
+}
+
+.open_erro{
+    visibility: visible;
+}
