@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+    
+</head>
+
+
+<body>
+
+    <!-- cabeçalho com os botões e a logo -->
+    <div class="cabeçalho">
+        <div class="botoess">
+            <input type="image" class="botoess" src="img/bottonvoltar.png" alt="botão_voltar" id="voltar">
+        </div>
+
+       
+        <img class="logo" src="img/titulo.png" alt="CandyLand">
+        
+
+        <div class="botoess">
+            <input id = "amigos" class ="botoess" type="image" src="img/bottonmenu.png" alt="botão_amigos" ></input>
+        </div>
+
+        
+    </div>
+
+    <!-- container principal -->
+    <div class="container">
+        <!-- Container do card onde fica o icone de perfil, nome ... --> 
+        <div class="card-container"> 
+
+            <div class="iconPerf"> <!-- Div icone do perfil -->
+                <img src="img/fotoperfil.png" alt="ImagemPerfil">
+            </div>
+            <!-- Informações de dentro do card do perfil -->
+            <div class="infTxt">
+                <label class="nickname">Juninho123</label>
+                <label class="vitorias">Vitorias: 52</label>
+                <label class="moedas">Moedas: 50</label>
+            </div>
+            
+
+        </div>
+    
+    <!-- Container aonde fica o menu dos items -->
+    <div class="container-items">
+        <!-- Skin que será visualizado na tela central -->
+        <div class="card-preview" >
+            <div class="centralizarImagem">
+                <img src="img/b1.png" width="45%" height="60%" id="boneco" alt="ImagemPreview">
+            </div>
+        </div>
+    
+        <!-- Inventario onde ficam as skins que podem ser escolhidas -->
+        <aside class="inventario"> 
+            <input class="im" id="i1" type="image" src="img/b2.png" width="30%" height="35%" alt="OpçãoDeSkin">
+            <input class="im" id="i2" type="image" src="img/b3.png" width="30%" height="35%" alt="OpçãoDeSkin">
+            <input class="im" id="i3" type="image" src="img/coelho_sapo1.png" width="30%" height="35%" alt="OpçãoDeSkin">
+        </aside>
+    
+    </div>
+    
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>
+
