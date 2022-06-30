@@ -1,0 +1,202 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(225, 255, 253);
+    background-image: url("/Imagens/background.png");
+    width: 95vw;
+    height: 95vh;
+    align-items: center;
+}
+
+#div_header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 12%;
+}
+
+#div_header > div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_header > #imgBtnVoltar {
+    background-image: url("/Imagens/bottonvoltar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+    width: 20%;
+}
+
+#div_header > #imgBtnMenu {
+    background-image: url("/Imagens/bottonmenu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: center;
+    width: 20%;
+}
+
+#h1Titulo {
+    font-weight: bolder;
+    font-size: 4vw;
+    text-shadow: 1px 1px 2px #fc62ffff;
+    color: white;
+}
+
+#container {
+    background-image: url("/Imagens/img_fundo_login.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    
+    width: 50vw;
+    height: 60vh;
+}
+
+#div_search {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    min-height: 30px;
+    margin-bottom: 10px;
+}
+
+#div_search > input {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-width: 0px;
+    font-size: medium;
+    outline: 0;
+    padding-left: 15px;
+}
+
+#div_search > #scBtnPesquisar {
+    width: 25%;
+    border-width: 0px;
+    background-color: rgb(190, 250, 133);
+}
+
+#div_search > #scBtnCriarSala {
+    width: 25%;
+    border-width: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(190, 250, 133);
+}
+
+#div_search > #scBtnPesquisar:hover {
+    background-color: rgb(159, 241, 83);
+}
+
+#div_search > #scBtnCriarSala:hover {
+    background-color: rgb(159, 241, 83);
+}
+
+#listitems {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+#listitems::-webkit-scrollbar {
+    width: 5px;
+}
+
+#listitems::-webkit-scrollbar-track {
+    background: #a2e9ff;
+}
+
+#listitems::-webkit-scrollbar-thumb {
+    background: rgb(190, 250, 133);
+}
+
+.div_list_item {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    min-height: 40px;
+    margin-bottom: 5px;
+}
+
+.div_list_item > .div_col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_list_item > .div_col_name {
+    width: 100%;
+    background-color: #a2e9ff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.div_list_item > .div_col_item {
+    width: 25%;
+    background-color: #a2e9ff;
+}
+
+.div_list_item > .div_col_lastitem {
+    width: 25%;
+    background-color: #a2e9ff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.div_list_item > .div_col_btn {
+    width: 25%;
+    background-color: rgb(190, 250, 133);
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.div_list_item > .div_col_btn:hover{
+    background-color: rgb(159, 241, 83);
+}
+
+.label_item {
+    color: #555;
+    font-size: larger;
+    text-shadow: 1px 1px 2px #dfb0ffff;
+}
+
+/* @media (orientation: portrait) {
+    .div_list_item {
+        flex-direction: column;
+    }
+
+    .div_list_item > .div_col_item {
+        width: 0%;
+        visibility: hidden;
+    }
+
+    .div_list_item > .div_col_lastitem {
+        width: 0%;
+        visibility: hidden;
+    }
+
+    .div_list_item > .div_col_btn {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+} */
+
+@media (orientation: portrait) {
+    #h1Titulo {
+        font-size: 4vh;
+    }
+}

@@ -33,6 +33,11 @@ h3 {
     align-self: center;
 }
 
+.text_sala_objetivo {
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
 #game_div {
     border-width: 10px;
     border-color: #000;

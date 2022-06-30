@@ -35,10 +35,12 @@ export function renderScreen(ctx, assets, game) {
 
         if ( personagem.transform === null ) continue;
 
+        //console.log("personagem", personagem.transform.y)
+
         ctx.drawImage(
             assets.character,
             personagem.transform.x - personagem.transform.sx / 2,
-            personagem.transform.y - personagem.transform.sy
+            personagem.transform.y - personagem.transform.sy / 2
         )
     }
 
@@ -46,13 +48,15 @@ export function renderScreen(ctx, assets, game) {
 
     for (const itemId in game.state.itens) {
         const objeto = game.state.itens[itemId]
-
+        
         if ( objeto.transform === null ) continue;
+
+        //console.log(objeto.transform.y)
 
         ctx.drawImage(
             assets.plataforma,
             objeto.transform.x - objeto.transform.sx / 2,
-            objeto.transform.y + 10
+            objeto.transform.y - objeto.transform.sy / 2
         )
     }
 

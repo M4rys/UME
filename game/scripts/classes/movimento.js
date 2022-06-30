@@ -13,28 +13,29 @@ class Movimento {
     }
 
     event(command) {
-        if (command.tag == 'collision') {
-            this.OnCollision(command.collision)
+        if (command.tag == 'collisionEnter') {
+            this.OnCollisionEnter(command.collision)
+        } else if (command.tag == 'collisionExit') {
+            this.OnCollisionExit(command.collision)
         }
     }
 
-    OnCollision(objeto) {
+    OnCollisionEnter(objeto) {
         if (this.objeto.transform === null) return;
         if (objeto.transform === null) return;
+        
+        if (objeto.tipo == "ground") {
+            this.aceleration.y = Constants.aceleration_y
+            //this.objeto.transform.setY(this.objeto.transform.y)
 
-        //this.aceleration.y = 0
-        this.objeto.transform.setY(objeto.transform.y)
+            this.onGround = true
+        }
+    }
 
-        this.onGround = true
-
-        // let y = 512 - 64
-
-        // if (objeto.transform !== null) y = objeto.transform.y - 64
-
-        // console.log(objeto.transform)
-
-        // this.aceleration.y = 0
-        // this.objeto.transform.y = y
+    OnCollisionExit(objeto) {
+        if (objeto.tipo == "ground") {
+            this.onGround = false
+        }
     }
 
     resetMovementX() {
@@ -59,11 +60,7 @@ class Movimento {
     }
 
     andar(direction) {
-        if (direction == 0) {
-            //logica de parar de andar
-
-            return this.walkingDirection = 0;
-        }
+        if (direction == 0) return this.walkingDirection = 0;
         if (this.walkingDirection != 0) return;
 
         //esquerda
@@ -83,11 +80,25 @@ class Movimento {
         this.acelerarX(this.walkingDirection)
 
         //atrito
-        this.aceleration.x += this.velocidade.x * Constants.atrito
+        let atrito = (this.onGround) ? Constants.atrito : Constants.resistenciaAr
+
+        this.aceleration.x += this.velocidade.x * atrito
         this.velocidade.x += this.aceleration.x
 
+        //limitar velocidade
+        if (this.velocidade.x > 0)
+            this.velocidade.x = Math.min(this.velocidade.x, Constants.limit_speed)
+        else
+            this.velocidade.x = Math.max(this.velocidade.x, -Constants.limit_speed)
+
         transform.setX(transform.x + this.velocidade.x + 0.5 * this.aceleration.x)
-        transform.setY(transform.y + this.aceleration.y)
+
+        if (this.objeto.boxcolider !== null) {
+            transform.setY(transform.y + Math.min(this.objeto.boxcolider.distCollision.y, this.aceleration.y))
+        } else {
+            transform.setY(transform.y + this.aceleration.y)
+        }
+
 
         //retirar depois
         if (transform.x > 960) transform.setX(0)

@@ -104,13 +104,7 @@ class Game {
             // verificar colisões
             if (personagem.transform !== null && personagem.boxcolider !== null) {
 
-                for (const itemId in this.state.itens) {
-                    const item = this.state.itens[itemId]
-
-                    if (personagem.boxcolider.checkCollision(item)) {
-                        personagem.boxcolider.OnCollisionEnter(item)
-                    }
-                }
+                personagem.boxcolider.updateCollision(this.state.itens)
 
                 if (personagem.transform.y > 512) {
                     this.deletarPersonagem({ id: this.state.current })

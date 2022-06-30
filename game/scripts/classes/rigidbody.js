@@ -10,7 +10,7 @@ class RigidBody {
     }
 
     event(command) {
-        if (command.tag == 'collision') {
+        if (command.tag == 'collisionEnter') {
             this.OnCollision()
         }
     }
@@ -21,6 +21,9 @@ class RigidBody {
 
     gravidade() {
         if (this.objeto.movimento === null) return;
+        if (this.objeto.boxcolider !== null && this.objeto.boxcolider.onCollision) {
+            return this.OnCollision()
+        }
 
         let v = Constants.gravidade * (clock.time - this.time)
         this.objeto.movimento.acelerarY(v)

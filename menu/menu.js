@@ -1,6 +1,6 @@
 //console.log('começando alguma coisa.')
 document.getElementById("play-btn").addEventListener("click", function(){
-    window.location.href = "/listaServers/index.html";
+    window.location.href = "/salas";
 });
 
 document.getElementById("cria_sala-btn").addEventListener("click", function(){

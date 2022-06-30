@@ -26,8 +26,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.1089995"
-     inkscape:cx="210.28928"
-     inkscape:cy="385.49084"
+     inkscape:cx="169.98581"
+     inkscape:cy="354.19638"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1272"
@@ -354,7 +354,7 @@ AElFTkSuQmCC
 "
        id="image414"
        x="-32.974121"
-       y="72.514"
+       y="72.510078"
        transform="scale(-1,1)" /><image
        width="8.4666662"
        height="8.4666662"
@@ -366,7 +366,7 @@ AElFTkSuQmCC
 "
        id="image416"
        x="-32.974121"
-       y="89.447334"
+       y="89.43557"
        transform="scale(-1,1)" /><image
        width="8.4666662"
        height="8.4666662"
@@ -378,7 +378,7 @@ AElFTkSuQmCC
 "
        id="image418"
        x="-32.974121"
-       y="106.38072"
+       y="106.36112"
        transform="scale(-1,1)" /><image
        width="8.4666662"
        height="8.4666662"
@@ -390,7 +390,7 @@ AElFTkSuQmCC
 "
        id="image420"
        x="-32.974121"
-       y="123.31407"
+       y="123.28663"
        transform="scale(-1,1)" /><image
        width="8.4666662"
        height="8.4666662"
@@ -414,7 +414,7 @@ AElFTkSuQmCC
 "
        id="image424"
        x="-32.974121"
-       y="80.980667"
+       y="80.972824"
        transform="scale(-1,1)" /><image
        width="8.4666662"
        height="8.4666662"
@@ -426,7 +426,7 @@ AElFTkSuQmCC
 "
        id="image426"
        x="-32.974121"
-       y="97.913994"
+       y="97.898308"
        transform="scale(-1,1)" /><image
        width="8.4666662"
        height="8.4666662"
@@ -438,7 +438,7 @@ AElFTkSuQmCC
 "
        id="image428"
        x="-32.974121"
-       y="114.84741"
+       y="114.82389"
        transform="scale(-1,1)" /><image
        width="8.4666662"
        height="8.4666662"
@@ -450,4 +450,26 @@ kjRAFUeQkwbQAdGl3igYBaNgFIyCQQkAoXIiLs6jmlgAAAAASUVORK5CYII=
 "
        id="image438"
        x="24.510462"
-       y="131.77589" /></g></svg>
+       y="131.74452" /><image
+       width="15.424864"
+       height="5.2916665"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAUCAYAAABFyTWeAAABeElEQVRoBe2ZMW4CMRBF4yhX4ACA
+REMNFaLjXHswOuQKahokoNiSQyRIo1fEspQdh4y8E29jfWn8Z/7s399s+Hw+b698YhS2zUZOcGmP
+lAdcyvfX99DLnODSvikPuJQvufee4Ab/2QbCyxLgdpPVzWZygo9H3UrX6zwPvDo2u2r0Mie4cv0t
+AewsUmWnj19PdT4LxXIpJ3i/11HvdlLPFwQPvDo2u+p0TvBI9LcEsLNKlZ3KEwCn84WCS52f8oCr
+XNtzKPQyJ3hk+lsC1Gowo7n0CYDTR+784v06098SoNgJPi4OTwBnzle/Pqf6WwKoneDrws8J4NT5
+g1+jc/0tAQY7wWdh6Ps+/zfwchHFi4Wc4MNBt4ntNs8Dr47Nrhq9zAl2pr8lgJ2lquwUYozfE+B+
+l0GnUznBp5NOwGqV54FXx2ZXjV7mBDvV3xLAzlpVdgpd10kCPB4y4GQiJ/h61Q0+n+d54NWx2VWj
+lznBzvW3BLCzWJWdvgCaO61xRyMHEAAAAABJRU5ErkJggg==
+"
+       id="image3160"
+       x="274.51419"
+       y="72.752281" /><rect
+       style="opacity:1;fill:#907cd6;fill-opacity:1;stroke:none;stroke-width:1.61227;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3218"
+       width="12.294533"
+       height="6.5863571"
+       x="41.086323"
+       y="69.752663"
+       ry="1.0915494" /></g></svg>

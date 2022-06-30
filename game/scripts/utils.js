@@ -1,8 +1,29 @@
 export const Constants = {
-    gravidade: 9.8,
+    gravidade: 13,
     atrito: -0.12,
-    aceleration_x: 0.7,
-    aceleration_y: 5
+    resistenciaAr: -0.12,
+    aceleration_x: 0.9,
+    aceleration_y: 5,
+    limit_speed: 5
+}
+
+//adicionar dados na memória local do navegador
+export function setData(name, objeto) {
+    localStorage.setItem(name, JSON.stringify(objeto))
+}
+
+//obter dados da memória local do navegador
+export function getData(name) {
+    const data = localStorage.getItem(name)
+
+    if (data === null) return null;
+
+    return JSON.parse(data)
+}
+
+//remove dados da memória local do navegador
+export function removeData(name) {
+    localStorage.removeItem(name)
 }
 
 export function loadImage(src) {
@@ -33,4 +54,4 @@ export async function loadAssets() {
     return assets
 }
 
-export default { Constants, loadImage, loadAssets }
+export default { Constants, loadImage, loadAssets, setData, getData, removeData }
