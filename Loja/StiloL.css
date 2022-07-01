@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    background-image: url("/Imagens/background.png");
   
 }
   
@@ -12,32 +13,42 @@ body, html {
 header.group1 {
     display: flex;
     flex-direction: row;
-    height: 5%;
-    background: yellow;
+    height: 10%;
     padding: 0.1%;
 }
 
+.titulo{
+    position: relative;
+    height: 250%;
+    bottom: 60%;
+
+}
 .topo {
     flex: 1 auto;
     position: relative;
-    background: aqua;
     margin: 0.1%;
 }
 
+
+
+
 #dinheiro{
+    background-color: pink;
+    border: solid magenta;
+
+    border-radius: 20%;
     position: absolute;
-    font-size: 1.55vw;
+    font-size: 4vh;
     right: 0;
     margin: 0;
-    top: 10%;
+    top: 30%;
     
 }
 
 input.voltar{
-    position: absolute;
+    position: relative;
     left: 0;
-    width: 20%;
-    height: 100%;
+    height: 125%;
 }
 
 .group2 {
@@ -61,10 +72,12 @@ input.voltar{
 article.display {
     position: relative;
     flex: 1;
-    background-image: url("natureza.jpg");
-    background-size:contain;
+    background-color: rgb(110, 110, 110,0.5);
+    background-repeat: no-repeat;
     background-size: 100%;
     margin: 0.1%;
+    border: solid purple;
+    border-radius: 5%;
 }
 
 .display img{
@@ -74,91 +87,114 @@ article.display {
     right: 25%;
 }
 
-footer.Plano_Fundo {
+.Plano_Fundo {
     position: relative;
     flex-direction: row;
     height: 33%;
-    background: green;
     margin: 0.1%;
+    visibility: hidden;
 }
 
-input.im1{
-    position: relative;
-    height: 100%;
-    width: 30%;
-    left: 5%;
-}
-input.im2{
-    position: relative;
-    height: 100%;
-    width: 30%;
-}
-input.im3{
-    position: relative;
-    height: 100%;
-    width: 30%;
-    right: 5%;
+.abrirPlano{
+    visibility: visible;
 }
 
-aside.Loja {
-    width: 30%;
-    background: olive;
-    margin: 0.1%;
+
+
+
+
+
+.comprar{
+    position: absolute;
+    width: 49%;
+    height: 90%;
+    top: 5%;
+    right: 0;
+    visibility: hidden;
+}
+
+.abrirComprar{
+    visibility: visible;
+}
+
+
+.informações{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #a2e9ff;
+    top: 15%;
+    height: 10;
+    align-items: center;
+    width: 50%;
+    border: solid black;
+    border-radius: 3%;
+    margin: 1%;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
 }
 
 
 
-.popup{
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 0 40px 40px;
-    text-align: center;
-    background-color: red;
-    border: solid black;
-}
-
-.open_popup{
-    visibility: visible;
-}
-
-.confirm{
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 0 40px 40px;
-    text-align: center;
-    background-color: red;
-    border: solid black;
-}
-
-.open_confirm{
-    visibility: visible;
-}
-
 .erro{
     visibility: hidden;
     display: flex;
     flex-direction: column;
+    background-image: url("/Imagens/butonnnn.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 0 40px 40px;
     text-align: center;
-    background-color: red;
+    background-color: cyan;
     border: solid black;
+    border-radius: 30%;
 }
 
 .open_erro{
     visibility: visible;
 }
+
+.Loja {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background:  #a2e9ff;
+    height: 100%;
+    margin: 0.1%;
+    border: solid lightblue;
+    border-radius: 1%;
+    
+}
+
+.container_img{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,32.5%);
+    grid-template-rows:auto auto; 
+    grid-auto-rows:0px; 
+    overflow:hidden; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    
+}
+
+.im{
+    position: relative;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.tex{
+    visibility: hidden;
+    position: relative;
+    text-align: center;
+    font-size: 3vh;
+    
+}
+

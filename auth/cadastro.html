@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>CandyLand</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <script src="script.js"></script>
+    <script src="script_cadastro.js" defer></script>
 </head>
 
 
 <body>
-    <form class="form" action="/menu/index.html">
-        <div class="square">
-            <div class="topo" >
-                <!-- <img class="imgUser" src="./img/user.png" alt="UserPicture">
-                <h3>Cadastro</h3> -->
-
+    <img src="../Imagens/titulo.png" alt="CandyLand">
+    <div class="squareRegister">
+        <div id="chSquare">
+            <!-- cria um formulario para envio de dados -->
+            <!-- <form class="form" action="index.html"> -->
+                <!-- div para o input do apelido do novo usuário -->
                 <div class="square-group">
-                    <label>Nickname</label>
-                    <input type="text" name="Nickname" placeholder="Digite seu Nickname" required>
+                    <label>Apelido</label>
+                    <input id= "input_Apelido" type="text" name="Nickname" placeholder="Digite seu Apelido" required>
                 </div>
+                <!-- div para o input do email do novo usuário -->
                 <div class="square-group">
                     <label>Email</label>
-                    <input type="email" name="email" placeholder="Digite seu Email" required>
+                    <input id= "input_email" type="email" name="email" placeholder="Digite seu Email" required>
                 </div>
+                <!-- div para o input da senha do novo usuário -->
                 <div class="square-group">
                     <label>Senha</label>
-                    <input type="password" name="password" placeholder="Digite sua Senha" required>
+                    <input id= "input_senha" type="password" name="password" placeholder="Digite sua Senha" required>
                 </div>
+                <!-- div para botão de cadastro -->
                 <div class="square-group bt">
-                    <button type="submit">Cadastrar</button>
+                    <button type="submit" id="btn_cadastrar" >Cadastrar</button>
                 </div>
-            </div>
+                <!-- link que permite voltar para a pagina de login -->
+                <a href="index.html">Já tenho uma conta</a>
+            <!-- </form> -->
         </div>
-    </form>
-
-    
-    
+    </div>
 
 </body>
 </html>

@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <!-- da nome a pagina -->
+    <title>CandyLand</title>
+    <!-- importa o arquivo css e javascript -->
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <script src="script.js"></script>
+    <script src="script_login.js" defer></script>
 </head>
 
 
 <body>
-
-    <form class="form" action="/menu/index.html">
-        <div class="square">
-            <div class="topo" >
-                <!-- <img class="imgUser" src="./img/user2.png" alt="UserPicture"> -->
-                <!-- <h3>Login</h3> -->
-
+    
+    <img src="../Imagens/titulo.png" alt="CandyLand">
+    
+    <div class="squareLogin">
+        <div id="chSquare">
+            <!-- <form class="form" action="/menu/index.html"> -->
+                <!-- div para o input do apelido escolhido -->
                 <div class="square-group">
-                    <label>Nick</label>
-                    <input name="email" placeholder="Digite seu Nickname" required>
+                    <label>Apelido</label>
+                    <input id= "input_apelido" placeholder="Digite seu Apelido" required>
                 </div>
+                <!-- div para a criação de um input da senha -->
                 <div class="square-group">
                     <label>Senha</label>
-                    <input type="password" name="password" placeholder="Digite sua Senha" required>
+                    <input id="input_senha" type="password" name="password" placeholder="Digite sua Senha" required>
                 </div>
+                <!-- div do botão entrar -->
                 <div class="square-group bt">
-                    <button type="submit">Entrar</button>
+                    <button id = "btn_login" >Entrar</button>
                 </div>
+                <!-- link que direciona para o cadastro -->
                 <a href="cadastro.html">Criar conta</a>
-            </div>
+
+            <!-- </form> -->
         </div>
-    </form>
+
+    </div>
+    
 
     
     

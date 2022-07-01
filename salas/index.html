@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="style_dialog.css"/>
+
+        <title id="title">CandyLand - Salas</title>
+    </head>
+    <body>
+        <!-- dialog de criar sala -->
+        <div class="dialogCriarSala" id="dialog-form" title="Criar Sala">
+            <div class="dialogCriarSala" id="containerForm">
+                <h3 class="dialogCriarSala">Criar Sala</h3>
+
+                <div class="div_row dialogCriarSala">
+                    <div class="dialogCriarSala div_dialog_label">
+                        <label class="dialogCriarSala">Nome</label>
+                    </div>
+                    <input id="dialog_input_nomesala" class="dialogCriarSala" type="text" placeholder="Nome da sala">
+                </div>
+
+                <div class="div_row dialogCriarSala">
+                    <select id="dialog_select_type" class="dialogCriarSala">
+                        <option value="private">Sala Privada</option>
+                        <option value="public">Sala Pública</option>
+                    </select>
+                </div>
+
+                <div class="div_row">
+                    <button class="dialogCriarSala" id="dialogBtnCancelar">Cancelar</button>
+                    <button class="dialogCriarSala" id="dialogBtnCriar">Criar Sala</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- inicio da página -->
+        <div>
+            <div id="div_header">
+                <div id="imgBtnVoltar"></div>
+                <div><label id="h1Titulo">Lista de Salas</label></div>
+                <div id="imgBtnMenu"></div>
+            </div>
+            
+            <div id="container">
+                <div id="div_search">
+                    <input id="scInput" name="sala" placeholder="Digite o nome da sala" required>
+                    <button id="scBtnPesquisar">Pesquisar</button>
+                    <button id="scBtnCriarSala">Criar Sala</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- <div class="dialogCriarSala div_dialog_label">
+    <label class="dialogCriarSala">Tipo: </label>
+</div> -->
